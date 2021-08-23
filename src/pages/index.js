@@ -1,13 +1,11 @@
-import { Box } from '@material-ui/core';
 import Head from 'next/head';
 import { Component } from 'react';
-import App from '../components/App';
+import Body from '../components/Body';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 class Home extends Component {
     render() {
-        const Gap = () => <Box py="0.5rem" />;
         return (
             <>
                 <Head>
@@ -17,9 +15,7 @@ class Home extends Component {
                 </Head>
                 <Header />
 
-                <main>
-                    <App />
-                </main>
+                <Body />
 
                 <Footer />
             </>

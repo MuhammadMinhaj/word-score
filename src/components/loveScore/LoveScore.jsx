@@ -1,15 +1,15 @@
 import { Box } from '@material-ui/core';
 import { Component } from 'react';
-import Title from './common/Title';
+import Title from '../common/Title';
 
-class WordScore extends Component {
+class LoveScore extends Component {
     render() {
         return (
             <Box>
-                <Title title="Word Score" />
+                <Title title="Love Score" />
             </Box>
         );
     }
 }
 
-export default WordScore;
+export default LoveScore;
