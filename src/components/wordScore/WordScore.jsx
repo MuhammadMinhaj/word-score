@@ -1,19 +1,11 @@
-import { Box, Button, TextField, withStyles } from '@material-ui/core';
-import { Functions as FunctionsIcon } from '@material-ui/icons';
+import { Box, withStyles } from '@material-ui/core';
 import { Component } from 'react';
+import ScoreResult from '../common/ScoreResult';
 import Title from '../common/Title';
+import Field from './Filed';
+import MultipleScoreResult from './multipleScoreResult/MultipleScoreResult';
 
-const styles = () => ({
-    input: {
-        color: '#fff',
-    },
-    label: {
-        color: '#607d8b',
-    },
-    helperText: {
-        color: '#e91e63',
-    },
-});
+const styles = () => ({});
 
 class WordScore extends Component {
     render() {
@@ -22,31 +14,12 @@ class WordScore extends Component {
             <Box p="1rem">
                 <Title title="Word Score" />
                 <Box height="1rem" />
-
-                <TextField
-                    placeholder="Example - hard work, knowledge, attitude"
-                    variant="filled"
-                    fullWidth
-                    color="secondary"
-                    label="Enter one or more words"
-                    helperText=" Write one or more words with commas or spaces separately"
-                    InputProps={{
-                        className: classes.input,
-                    }}
-                    InputLabelProps={{
-                        className: classes.label,
-                    }}
-                    FormHelperTextProps={{ className: classes.helperText }}
-                />
+                <Field />
                 <Box height="1rem" />
-                <Button
-                    variant="outlined"
-                    color="secondary"
-                    size="large"
-                    startIcon={<FunctionsIcon />}
-                >
-                    Calculate
-                </Button>
+                <Title title="Result" isSub />
+                <ScoreResult />
+                <Box height="1rem" />
+                <MultipleScoreResult />
             </Box>
         );
     }

@@ -22,7 +22,7 @@ class App extends Component {
                     <Box py="1rem">
                         <Box className={classes.wrapper} py="1.25rem" boxShadow={3}>
                             <Typography variant="h6" align="center" color="inherit">
-                                Developed By - Muhammad Minhaj
+                                Developed By 😎 Muhammad Minhaj
                             </Typography>
                         </Box>
                     </Box>

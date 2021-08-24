@@ -19,7 +19,7 @@ class Body extends Component {
         return (
             <Box component="main" py="1rem" className={classes.root}>
                 <Container>
-                    <Box boxShadow={3} borderRadius="0.5rem">
+                    <Box boxShadow={3} borderRadius="0.5rem" py="2rem">
                         <Box display={isSm ? 'block' : 'flex'}>
                             <Box width="100%">
                                 <WordScore />

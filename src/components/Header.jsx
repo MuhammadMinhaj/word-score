@@ -34,7 +34,7 @@ class Header extends Component {
                                 </Typography>
                                 <Box height="0.5rem" />
                                 <Button variant="outlined" color="secondary" size="large">
-                                    Github
+                                    Source On Github
                                 </Button>
                             </Box>
                         </Box>
