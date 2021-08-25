@@ -18,6 +18,7 @@ class WordScore extends Component {
                 <Box height="1rem" />
                 <Title title="Result" isSub />
                 <ScoreResult />
+
                 <Box height="1rem" />
                 <MultipleScoreResult />
             </Box>

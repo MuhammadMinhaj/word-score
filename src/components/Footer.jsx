@@ -5,6 +5,9 @@ import { Component } from 'react';
 const styles = () => ({
     root: {
         backgroundImage: 'var(--bg)',
+        position: 'fixed',
+        bottom: 0,
+        width: '100%',
     },
     wrapper: {
         backgroundImage: 'var(--fg)',

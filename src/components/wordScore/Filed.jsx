@@ -27,6 +27,7 @@ class WordScore extends Component {
                     label="Enter one or more words"
                     helperText="Write one or more words with commas or spaces separately"
                     multiline
+                    maxRows={3}
                     InputProps={{
                         className: classes.input,
                     }}
@@ -35,6 +36,7 @@ class WordScore extends Component {
                     }}
                     FormHelperTextProps={{ className: classes.helperText }}
                 />
+
                 <Box py="1rem" display="flex">
                     <Button
                         variant="outlined"

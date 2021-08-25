@@ -11,6 +11,9 @@
   );
   --bg-dark: linear-gradient(to right, #070335, #283048);
   --fg-dark: linear-gradient(to right, #283048, #070335);
+  --primary: #283048;
+  --secondary: #f50057;
+  --white: #fff;
 }
 
 html,
@@ -28,4 +31,33 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/* Scroll Styles */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--fg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* background: linear-gradient(to top, var(--secondary), #070335); */
+  background: linear-gradient(
+    95deg,
+    rgb(242, 113, 33) 0%,
+    rgb(233, 64, 87) 50%,
+    rgb(138, 35, 135) 100%
+  );
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

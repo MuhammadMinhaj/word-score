@@ -17,7 +17,12 @@ class Body extends Component {
     render() {
         const { classes, isSm } = this.props;
         return (
-            <Box component="main" py="1rem" className={classes.root}>
+            <Box
+                component="main"
+                pt={isSm ? '7rem' : '16rem'}
+                pb={isSm ? '7rem' : '10rem'}
+                className={classes.root}
+            >
                 <Container>
                     <Box boxShadow={3} borderRadius="0.5rem" py="2rem">
                         <Box display={isSm ? 'block' : 'flex'}>

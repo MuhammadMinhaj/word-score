@@ -9,14 +9,14 @@ const styles = () => ({
 
 class ScoreResult extends Component {
     render() {
-        const { classes, isRight } = this.props;
+        const { classes, isRight, isNoneShadow } = this.props;
         return (
             <Box
                 display="flex"
                 color="#fff"
                 borderRadius="1rem"
                 mt="1rem"
-                boxShadow={3}
+                boxShadow={isNoneShadow ? 0 : 3}
                 overflow="hidden"
             >
                 <Box

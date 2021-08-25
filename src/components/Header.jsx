@@ -5,6 +5,10 @@ import { Component } from 'react';
 const styles = () => ({
     root: {
         backgroundImage: 'var(--bg)',
+        position: 'fixed',
+        top: 0,
+        width: '100%',
+        zIndex: '999',
     },
     wrapper: {
         backgroundImage: 'var(--fg)',
@@ -26,12 +30,14 @@ class Header extends Component {
                             </Typography>
                             <Box maxWidth="500px" m="auto" textAlign="center">
                                 <Box height="0.5rem" />
+                                {!isSm && (
+                                    <Typography variant="body1" align="center" color="secondary">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Voluptatum, culpa! Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Voluptatum, culpa!
+                                    </Typography>
+                                )}
 
-                                <Typography variant="body1" align="center" color="secondary">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Voluptatum, culpa! Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Voluptatum, culpa!
-                                </Typography>
                                 <Box height="0.5rem" />
                                 <Button variant="outlined" color="secondary" size="large">
                                     Source On Github
