@@ -16,7 +16,7 @@ const styles = () => ({
 
 class WordScore extends Component {
     render() {
-        const { classes } = this.props;
+        const { classes, value, handleChange, handleClick } = this.props;
         return (
             <>
                 <TextField
@@ -28,6 +28,8 @@ class WordScore extends Component {
                     helperText="Write one or more words with commas or spaces separately"
                     multiline
                     maxRows={3}
+                    value={value}
+                    onChange={handleChange}
                     InputProps={{
                         className: classes.input,
                     }}
@@ -44,6 +46,7 @@ class WordScore extends Component {
                         size="large"
                         startIcon={<FunctionsIcon />}
                         fullWidth
+                        onClick={handleClick}
                     >
                         Calculate
                     </Button>
